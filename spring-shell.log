@@ -1,3 +1,6 @@
 1701700037044:start -n Activity_1
 1701700184056:stop -n Activity_2
 1701700207371:stop
+1701793644749:export -f csv -p C:\\Users\\F\\Desktop\\outputAgile.csv
+1701793894582:export -f csv -p D:\\\nabc.csv
+1701793943837:export -f json -p D:\\abc.json
