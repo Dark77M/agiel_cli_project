@@ -4,3 +4,20 @@
 1701793644749:export -f csv -p C:\\Users\\F\\Desktop\\outputAgile.csv
 1701793894582:export -f csv -p D:\\\nabc.csv
 1701793943837:export -f json -p D:\\abc.json
+1701861161261:start -n activty_1
+1701861174976:stop
+1701861217415:start -n activity_1
+1701861233796:stop
+1701861243116:start -n ac2
+1701861253281:stop
+1701861270259:start -n ac3
+1701861287116:stop
+1701861295469:start -n ac2
+1701861309220:stop
+1701861463960:export -f -p csv D:\\aglie.csv
+1701861544436:export -f csv -p D:\\aglie.csv
+1701861692518:import -f csv -p D:\\aglie.csv
+1701863738555:import -f csv -p D:\\aglie
+1701863785244:import -f csv -p D:\\aglie.csv
+1702048166852:import -f csv -p D:\\agile.csv
+1702048198309:import -f csv -p D:\\aglie.csv
