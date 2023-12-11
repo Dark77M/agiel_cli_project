@@ -11,6 +11,7 @@
     <groupId>it.unical</groupId>
     <artifactId>AgileCLIProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>AgileCLIProject</name>
     <description>AgileCLIProject</description>
     <properties>
@@ -54,6 +55,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>AgileCliProject</finalName>
+                </configuration>
             </plugin>
         </plugins>
     </build>

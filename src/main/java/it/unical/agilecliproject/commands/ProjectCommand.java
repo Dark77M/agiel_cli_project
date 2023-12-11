@@ -61,19 +61,20 @@ public class ProjectCommand {
     @ShellMethod(key = "export",value = "export log files into csv format")
     public void exportData(
             @ShellOption(value = {"-f","--format"})String format,
-            @ShellOption(value = {"-p","path"})String location){
+            @ShellOption(value = {"-s","--source"})String sourceLocation,
+            @ShellOption(value = {"-d","--destination"})String destinationLocation){
         if (format == null || format.isEmpty()){
             System.out.println("Format is required");
             return;
         }
-        if (location==null||location.isEmpty()){
+        if (sourceLocation==null||sourceLocation.isEmpty()||destinationLocation==null||destinationLocation.isEmpty()){
             System.out.println("Location is required");
             return;
         }
 
         try {
-            Path savePath = Paths.get(location);
-            Path loadPath = Paths.get("C:\\Users\\F\\IdeaProjects\\AgileCLIProject\\my_logs.txt");
+            Path savePath = Paths.get(destinationLocation);
+            Path loadPath = Paths.get(sourceLocation);
             if (format.equals("csv") || format.equals("CSV")) {
                 String header = "Date;Time;Event;Activity;";
                 StringBuilder stringBuilder = new StringBuilder();
@@ -120,8 +121,8 @@ public class ProjectCommand {
 }
     @ShellMethod(key = "import")
     public void importData(
-            @ShellOption(value = {"-f","--format","-F","--FORMAT"}) String format,
-            @ShellOption(value = {"-p","--path","-P","--PATH"}) String path) {
+            @ShellOption(value = {"-f","--format"}) String format,
+            @ShellOption(value = {"-p","--path"}) String path) {
 
         try {
             ArrayList<ActivityAnalysis> activityAnalyses = new ArrayList<>();
@@ -224,7 +225,7 @@ public class ProjectCommand {
             System.out.println("==========================================");
             cumulativeTimeMap.forEach((key, value)->{
                 System.out.printf("Activity: %s, Cumulative Time: %s%n",key,value);
-                System.out.println(LocalTime.MIN.plusSeconds(value));
+               // System.out.println(LocalTime.MIN.plusSeconds(value));
             });
         }catch (Exception ex){
             System.err.println(ex.getMessage());

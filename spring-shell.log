@@ -21,3 +21,6 @@
 1701863785244:import -f csv -p D:\\aglie.csv
 1702048166852:import -f csv -p D:\\agile.csv
 1702048198309:import -f csv -p D:\\aglie.csv
+1702291368799:export -f csv -s C:\\Users\\F\\IdeaProjects\\AgileCLIProject\\my_logs.txt -d D:\\exports\\export_data.csv
+1702291451940:export -f csv -s "C:\\Users\\F\\IdeaProjects\\AgileCLIProject\\my_logs.txt" -d "D:\\exports\\export_data.csv"
+1702291554122:export -f csv -s "C:\\\\Users\\\\F\\\\IdeaProjects\\\\AgileCLIProject\\\\my_logs.txt" -d "D:\\\\exports\\\\export_data.csv"
