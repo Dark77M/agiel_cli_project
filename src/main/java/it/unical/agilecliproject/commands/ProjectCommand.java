@@ -58,7 +58,7 @@ public class ProjectCommand {
         isActivityStarted = false;
         activityName = "";
     }
-    @ShellMethod(key = "export",value = "export log files into csv format")
+    @ShellMethod(key = "export",value = "export log files into csv/json format")
     public void exportData(
             @ShellOption(value = {"-f","--format"})String format,
             @ShellOption(value = {"-s","--source"})String sourceLocation,
@@ -119,7 +119,7 @@ public class ProjectCommand {
 
 
 }
-    @ShellMethod(key = "import")
+    @ShellMethod(key = "import", value = "import csv/json file for analysis")
     public void importData(
             @ShellOption(value = {"-f","--format"}) String format,
             @ShellOption(value = {"-p","--path"}) String path) {

@@ -24,3 +24,4 @@
 1702291368799:export -f csv -s C:\\Users\\F\\IdeaProjects\\AgileCLIProject\\my_logs.txt -d D:\\exports\\export_data.csv
 1702291451940:export -f csv -s "C:\\Users\\F\\IdeaProjects\\AgileCLIProject\\my_logs.txt" -d "D:\\exports\\export_data.csv"
 1702291554122:export -f csv -s "C:\\\\Users\\\\F\\\\IdeaProjects\\\\AgileCLIProject\\\\my_logs.txt" -d "D:\\\\exports\\\\export_data.csv"
+1702297707635:help
