@@ -25,3 +25,11 @@
 1702291451940:export -f csv -s "C:\\Users\\F\\IdeaProjects\\AgileCLIProject\\my_logs.txt" -d "D:\\exports\\export_data.csv"
 1702291554122:export -f csv -s "C:\\\\Users\\\\F\\\\IdeaProjects\\\\AgileCLIProject\\\\my_logs.txt" -d "D:\\\\exports\\\\export_data.csv"
 1702297707635:help
+1702298770121:export -f json -s "C:\\\\Users\\\\F\\\\IdeaProjects\\\\AgileCLIProject\\\\my_logs.txt" -d "C:\\\\Users\\\\F\\\\IdeaProjects\\\\AgileCLIProject\\\\test.json"
+1702391489114:start -n 1
+1702391514131:start -n 2
+1702391526585:stop
+1702391731984:export -f json -d "D:\\testex\\a1.json"
+1702391789507:export -f json -d "D:\\\\testex\\\\a1.json"
+1702391818985:export -f csv -d "D:\\\\testex\\\\a1.csv"
+1702391875603:import -f json -p "D:\\\\testex\\\\a1.json"
